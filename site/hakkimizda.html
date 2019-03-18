@@ -117,13 +117,13 @@
       <div class="one_half">
         <h6 class="heading">Bilgilerinizi Bırakın</h6>
         <p class="nospace btmspace-30">Bize bilgilerinizi bırakın, biz sizi arayalım.</p>
-        <form method="post" action="#">
+        <form name="contact" method="POST" data-netlify="true">
           <fieldset>
             <legend>Newsletter:</legend>
-            <input class="btmspace-15" type="text" value="" placeholder="Ad Soyad">
-            <input class="btmspace-15" type="text" value="" placeholder="Sirket">
-            <input class="btmspace-15" type="email" value="" placeholder="Eposta">
-            <input class="btmspace-15" type="tel" value="" placeholder="Telefon">
+            <input class="btmspace-15" type="text" value="" placeholder="Ad Soyad" name="name">
+            <input class="btmspace-15" type="text" value="" placeholder="Sirket" name="company">
+            <input name="email" class="btmspace-15" type="email" value="" placeholder="Eposta">
+            <input name="phone" class="btmspace-15" type="tel"value="" placeholder="Telefon">
             <button type="submit" value="submit">Gönder</button>
           </fieldset>
         </form>

@@ -131,13 +131,13 @@
       <div class="one_half">
         <h6 class="heading">Leave a Message</h6>
         <p class="nospace btmspace-30">Leave your contact information and we will get back to you as soon as possible.</p>
-        <form method="post" action="#">
+        <form name="contact" method="POST" data-netlify="true">
           <fieldset>
             <legend>Newsletter:</legend>
-            <input class="btmspace-15" type="text" value="" placeholder="Name">
-            <input class="btmspace-15" type="text" value="" placeholder="Company">
-            <input class="btmspace-15" type="email" value="" placeholder="Email">
-            <input class="btmspace-15" type="tel" value="" placeholder="Phone">
+            <input class="btmspace-15" type="text" value="" placeholder="Name" name="name">
+            <input class="btmspace-15" type="text" value="" placeholder="Company" name="company">
+            <input name="email" class="btmspace-15" type="email" value="" placeholder="Email">
+            <input name="phone" class="btmspace-15" type="tel"value="" placeholder="Phone">
             <button type="submit" value="submit">Submit</button>
           </fieldset>
         </form>
