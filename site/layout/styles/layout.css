@@ -36,7 +36,7 @@ File: Layout CSS
 
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
-#topbar{padding:120px 0 15px; font-size:.8rem; text-transform:uppercase;}
+#topbar{padding:120px 0 15px; font-size:.8rem;}
 
 #topbar *{margin:0; padding:0; list-style:none;}
 #topbar ul li{display:inline-block; margin-right:10px; padding-right:15px; border-right:1px solid;}
@@ -430,4 +430,9 @@ table a, #comments a{background-color:inherit;}
 
 	#pageintro article{max-width:none; width:100%;}
 	#pageintro .heading{font-size:2rem;}
+}
+
+.cp {
+	cursor: pointer;
+	user-select: none;
 }
