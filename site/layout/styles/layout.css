@@ -436,3 +436,8 @@ table a, #comments a{background-color:inherit;}
 	cursor: pointer;
 	user-select: none;
 }
+
+.section-header {
+	font-size: 26px;
+	font-weight: bolder;
+}

@@ -4,6 +4,8 @@
 <title>Işıldak Plastic - PVC Egepen Window and Door Systems</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
 <link href="/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
@@ -100,7 +102,7 @@
     <!-- ################################################################################################ -->
     <div class="content"> 
       <!-- ################################################################################################ -->
-      <h1 style="font-size: 26px" id="panjur">STORBOX BLINDS</h1>
+      <h1 class="section-header" id="panjur">STORBOX BLINDS</h1>
       <h2>
         General Features
       </h2>
@@ -118,7 +120,7 @@
 
       <hr class="btmspace-30 topspace-30">
 
-      <h1 style="font-size: 26px" id="kepenk">SHUTTERS</h1>
+      <h1 class="section-header" id="kepenk">SHUTTERS</h1>
       <h2>
         General Features
       </h2>
@@ -144,7 +146,7 @@
 
 <hr class="btmspace-30 topspace-30">
 
-      <h1 style="font-size: 26px" id="lambri">DECORATIVE WAINSCOT</h1>
+      <h1 class="section-header" id="lambri">DECORATIVE WAINSCOT</h1>
       <h2>
         General Features
       </h2>
@@ -167,7 +169,7 @@
 
 <hr class="btmspace-30 topspace-30">
 
-      <h1 style="font-size: 26px" id="sineklik">INSECT SCREEN</h1>
+      <h1 class="section-header" id="sineklik">INSECT SCREEN</h1>
       <h2>
         General Features
       </h2>
@@ -213,7 +215,7 @@
           </li>
           <li><i class="fa fa-phone"></i><span>Europe: <a href="tel:+902126512525">+90 (212) 651 2525</a></span><br><span>Anatolia: <a href="tel:+902165681008">+90 (216) 568 1008</a></span></li>
           <li><i class="fa fa-fax"></i><span>Europe: <a href="tel:+902126512904">+90 (212) 651 2904</a></span><br><span>Anatolia: <a href="tel:+902165681009">+90 (216) 568 1009</a></span></li>
-          <li><i class="fa fa-envelope-o"></i><span><a href="mailto:avrupa@isildakplastik.com">avrupa@isildakplastik.com</a></span><br><span><a href="mailto:anadolu@isildakplastik.com">anadolu@isildakplastik.com</a></span></li>
+          <li><i class="fa fa-envelope-o"></i><span><a href="mailto:info@isildakplastik.com">info@isildakplastik.com</a></span></li>
         </ul>
       </div>
       <div class="one_half">
@@ -253,5 +255,18 @@
 <script src="/layout/scripts/jquery.min.js"></script>
 <script src="/layout/scripts/jquery.backtotop.js"></script>
 <script src="/layout/scripts/jquery.mobilemenu.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script>
+       $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+</script>
 </body>
 </html>
