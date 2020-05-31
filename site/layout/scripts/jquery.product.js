@@ -6,7 +6,6 @@ function setProduct(hash) {
 }
 
 function showProduct(h) {
-  console.log(h);
   const products = $('.product');
   if (h !== "") {
     for (i = 0; i < products.length; i++) {
