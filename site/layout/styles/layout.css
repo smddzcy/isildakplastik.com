@@ -259,7 +259,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#CBCBCB; background-color:#252525;}
+body{color:#CBCBCB; background-color:#fff; line-height: normal;}
 a{color:#36D68C;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
@@ -354,8 +354,11 @@ table a, #comments a{background-color:inherit;}
 
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:1200px){
+	.hoc{max-width:1200px;}
+}
 @media screen and (min-width:978px){
-	.hoc{max-width:978px;}
+	.hoc-product{max-width: 95%;}
 }
 
 
@@ -363,6 +366,7 @@ table a, #comments a{background-color:inherit;}
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:900px){
 	.hoc{max-width:90%;}
+	.hoc-product{max-width:90%;}
 
 	#topbar{}
 
@@ -388,7 +392,7 @@ table a, #comments a{background-color:inherit;}
 
 @media screen and (max-width:750px){
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
-	.fl_left, .fl_right{display:block; float:none;}
+	/* .fl_left, .fl_right{display:block; float:none;} */
 	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
 	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
 
@@ -415,6 +419,66 @@ table a, #comments a{background-color:inherit;}
 	.testimonials article img{position:relative; top:inherit; left:inherit; margin-bottom:20px;}
 }
 
+/* Products
+--------------------------------------------------------------------------------------------------------------- */
+.product-info-title {
+	padding-top: 40px;
+}
+.hoc-container {
+	padding-bottom: 40px;
+	margin: 0 auto;
+}
+.product-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.product-info {
+	display: flex;
+	width: 50%;
+	min-height: 220px!important;
+}
+.full-row {
+	width: 100%;
+}
+.product-info-number-content {
+	display: block;
+	justify-content: center;
+	flex-direction: column;
+	float: right;
+	padding-right: 30px;
+	font-size: 150px;
+	color: #eaeaea;
+}
+.product-content {
+	margin-top: 38px!important;
+	border-left: 2px solid #eaeaea;
+	min-height: 220px!important;
+	padding: 0 40px 20px 20px;
+	padding-bottom: 20px;
+}
+.product-info-content-title {
+	margin-bottom: 5px;
+}
+
+.product-eg-img {
+	margin-right: 25px;
+	margin-top: 25px;
+}
+
+.product-images {
+	overflow: auto;
+	white-space: nowrap;
+	padding-top: 0px;
+}
+
+.product-images a {
+	display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
 
 /* Other
 --------------------------------------------------------------------------------------------------------------- */
@@ -430,6 +494,13 @@ table a, #comments a{background-color:inherit;}
 
 	#pageintro article{max-width:none; width:100%;}
 	#pageintro .heading{font-size:2rem;}
+	
+}
+@media screen and (max-width:978px){
+	.product-info-number-content{ display: none;}
+	.product-row{flex-direction: column;}
+	.product-info{width: 100%;}
+	.product-content{border: none}
 }
 
 .cp {
@@ -440,4 +511,77 @@ table a, #comments a{background-color:inherit;}
 .section-header {
 	font-size: 26px;
 	font-weight: bolder;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
